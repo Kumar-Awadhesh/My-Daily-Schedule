@@ -18,10 +18,28 @@ document.getElementById("task-btn").addEventListener("click", () => {
         const tasks = JSON.parse(getTask);
         taskArr = tasks;
     }
-    taskArr = [];
+
     taskArr.push(alltask)
     localStorage.setItem("allTask", JSON.stringify(taskArr))
 
+    const taskList = document.getElementById("tasks");
+    taskList.innerHTML = "";
+    const newTask = localStorage.getItem("allTask");
+    if(newTask !== null){
+        const arrtask = JSON.parse(newTask)
+        arrtask.forEach(ele => {
+            let addTask = document.createElement("h3")
+            addTask.textContent = ele.task
+            taskList.append(addTask);
+        });
+    }
+    else{
+        alert("Task input can not be empty!");
+        return;
+    }
+})
+
+window.addEventListener("DOMContentLoaded", () => {
     const taskList = document.getElementById("tasks");
     const newTask = localStorage.getItem("allTask");
     if(newTask !== null){
