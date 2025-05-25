@@ -1,0 +1,21 @@
+.container{
+    width: 90%;
+    margin: auto;
+    border: 1px solid;
+    align-content: center;
+    text-align: center;
+}
+
+.content{
+    width: 90%;
+    margin: auto;
+    border: 1px solid;
+}
+
+.title{
+    border: 1px solid;
+}
+
+.tasklist{
+    border-bottom: 1px solid;
+}
