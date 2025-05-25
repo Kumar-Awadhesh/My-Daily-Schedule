@@ -1,2 +1,2 @@
 # My-Daily-Schedule
-My Daily Schedule is a every day routine Platform/Website/app of a user.
+My Daily Schedule is an every day routine Platform/Website/app of a user.
